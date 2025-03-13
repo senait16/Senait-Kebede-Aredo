@@ -1,0 +1,408 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 2rem;
+  }
+  
+  nav ul li a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #007bff;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Hero Section Styles */
+  #hero {
+    background: linear-gradient(45deg, #faf6f2 0%, #f0e6dc 100%);
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: var(--complementary-teal);
+    color: var(--primary-brown);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+    border: 2px solid var(--complementary-teal);
+  }
+  
+  .cta-button:hover {
+    background-color: #1F4F59;
+    text-decoration: none;
+  }
+  
+  /* About Section Styles */
+  #about {
+    position: relative;
+    padding: 6rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .portrait-container {
+    position: relative;
+    border-radius: 50%;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(166, 123, 91, 0.1);
+  }
+  
+  .portrait-container svg {
+    border-radius: 50%;
+    background: #f0e6dc;
+  }
+  
+  /* Projects Section Styles */
+  #projects {
+    padding: 4rem 0;
+    background-color: #fff;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .project-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(166, 123, 91, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(166, 123, 91, 0.2);
+  }
+  
+  .project-item h3 {
+    color: var(--primary-brown);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .project-item p {
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .project-item a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-brown);
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-item a:hover {
+    background-color: #8C6246;
+    text-decoration: none;
+  }
+  
+  /* Skills Section Styles */
+  #skills {
+    padding: 4rem 0;
+    background-color: #f4f4f4;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .skills-list li {
+    background-color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact Section Styles */
+  #contact {
+    padding: 4rem 0;
+    background-color: #fff;
+  }
+  
+  #contact p {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  #contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #contact-form button {
+    background-color: var(--complementary-teal);
+    color: var(--primary-brown);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    border: 2px solid var(--complementary-teal);
+  }
+  
+  #contact-form button:hover {
+    background-color: #1F4F59;
+  }
+  
+  /* Resume Section Styles */
+  #resume {
+    padding: 4rem 0;
+    background-color: #fff;
+  }
+  
+  .resume-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .timeline-item {
+    border-left: 3px solid var(--primary-brown);
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Testimonials Section Styles */
+  #testimonials {
+    padding: 4rem 0;
+    background-color: #faf6f2;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(166, 123, 91, 0.1);
+    position: relative;
+  }
+  
+  .testimonial-card::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='%23A67B5B'%3E%3Cpath d='M3 4v9c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4H3zm0-2h18c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zm0 18h6v2H3v-2zm8 0h6v2h-6v-2z'/%3E%3C/svg%3E");
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1.5rem;
+  }
+  
+  #projects h2,
+  #skills h2,
+  #testimonials h2,
+  #contact h2 {
+    text-align: center;
+  }
+  
+  #projects h2 {
+    margin-bottom: 2rem;
+  }
+  
+  /* Updated Color Scheme */
+  :root {
+    --primary-brown: #A67B5B;
+    --complementary-teal: #2C6975;
+  }
+  
+  a, .cta-button, #contact-form button {
+    color: var(--primary-brown);
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+  
+  .social-link[aria-label="LinkedIn"]:hover { color: #0077b5; }
+  .social-link[aria-label="GitHub"]:hover { color: #6e5494; }
+  .social-link[aria-label="Twitter"]:hover { color: #1da1f2; }
+  .social-link[aria-label="Email"]:hover { color: var(--primary-brown); }
+  
+  .social-link svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      padding: 0 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      margin-top: 1rem;
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin-left: 0;
+      margin-bottom: 0.5rem;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }

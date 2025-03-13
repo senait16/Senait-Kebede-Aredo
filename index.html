@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analyst Portfolio</title>
+  <meta name="description" content="Data Analyst Portfolio - Showcasing data analysis projects and skills.">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/index.min.js",
+        "ScrollTrigger": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/ScrollTrigger.min.js",
+        "ScrollSmoother": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/ScrollSmoother.min.js"
+      }
+    }
+  </script>
+  <script src="script.js" type="module"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Jane Doe</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Transforming Data into Actionable Insights</h1>
+      <p>Data Analyst specializing in predictive modeling and business intelligence</p>
+      <a href="#contact" class="cta-button">Schedule Consultation</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-content">
+      <div class="portrait-container">
+        <svg width="300" height="300" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" stroke="var(--primary-brown)" stroke-width="2" fill="none"/>
+          <path fill="var(--primary-brown)" d="M30 65h40v5H30zm15-25a5 5 0 11-10 0 5 5 0 0110 0zm15 0a5 5 0 11-10 0 5 5 0 0110 0z"/>
+        </svg>
+      </div>
+      <div>
+        <h2>About Me</h2>
+        <p>Certified Data Analyst with 8+ years experience in financial analytics...</p>
+        <div class="skills-list">
+          <div class="skill-item">Advanced Excel</div>
+          <div class="skill-item">Power BI</div>
+          <div class="skill-item">Python</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Project items will be dynamically added here -->
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Professional Experience</h2>
+    <div class="resume-grid">
+      <div class="experience-column">
+        <div class="timeline-item">
+          <h3>Senior Data Analyst</h3>
+          <p>XYZ Corp • 2020-Present</p>
+          <p>Led predictive analytics team...</p>
+        </div>
+        <!-- more timeline items -->
+      </div>
+      <div class="skills-column">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>SQL</li>
+          <li>Tableau</li>
+          <li>Machine Learning</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>"Jane's insights revolutionized our reporting..."</p>
+        <h4>John Smith</h4>
+        <p>CEO, Analytics Corp</p>
+      </div>
+      <!-- more testimonial cards -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out!</p>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-.5 15.5v-5.3a3.1 3.1 0 0 0-3.1-3.1 3 3 0 0 0-2.4 1.2h-.1v-1h-2.6v8.2h2.8v-4.6a1.5 1.5 0 1 1 3 0v4.6h2.8zM6.9 8.3a1.7 1.7 0 0 0-1.7-1.7 1.7 1.7 0 0 0-1.7 1.7 1.7 1.7 0 0 0 1.7 1.7 1.7 1.7 0 0 0 1.7-1.7M8.1 16.5V8.3H5.3v8.2h2.8z"/>
+        </svg>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/>
+        </svg>
+        <span>GitHub</span>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M23 5.5a8.6 8.6 0 0 1-2.4.7 4.3 4.3 0 0 0 1.9-2.4 8.3 8.3 0 0 1-2.7 1 4.2 4.2 0 0 0-7.2 3.8A12 12 0 0 1 3.2 4a4.2 4.2 0 0 0 1.3 5.6 4.2 4.2 0 0 1-1.9-.5v.1a4.2 4.2 0 0 0 3.4 4.1 4.3 4.3 0 0 1-1.9.1 4.2 4.2 0 0 0 4 2.9 8.4 8.4 0 0 1-5.2 1.8A8.5 8.5 0 0 1 0 18.6a12 12 0 0 0 6.4 1.9c7.7 0 12-6.4 12-12v-.5c.8-.6 1.5-1.4 2.1-2.3z"/>
+        </svg>
+        <span>Twitter</span>
+      </a>
+      <a href="/cdn-cgi/l/email-protection#1c7f7372687d7f685c79647d716c7079327f7371" class="social-link" aria-label="Email">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        <span>Email</span>
+      </a>
+    </div>
+    <p>&copy; 2024 Jane Doe. All rights reserved.</p>
+  </footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+</html>
